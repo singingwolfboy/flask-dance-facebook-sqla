@@ -19,5 +19,9 @@
       "description": "The OAuth client secret for your application, assigned by Facebook",
       "value": "app-secret-goes-here"
     }
+  },
+  "addons": [{ "plan": "heroku-postgresql" }],
+  "scripts": {
+    "postdeploy": "flask createdb"
   }
 }
